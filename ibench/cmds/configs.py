@@ -28,7 +28,7 @@ class Configs(Cmd):
                             action='store_true', 
                             help="Emit commands, but do not run them")
         parser.add_argument('--editable', 
-                            default=True, 
+                            default=False, 
                             action='store_true', 
                             help="Install ibench editable in docker image so we can change it")
         parser.add_argument('-q', 

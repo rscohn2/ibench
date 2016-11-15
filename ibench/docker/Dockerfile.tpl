@@ -9,6 +9,7 @@ RUN apt-get update && apt install -y \
     libatlas3-base \
     libblas3 \
     liblapack3 \
+    liblapacke-dev \
     libopenblas-base \
     numactl \
     python \

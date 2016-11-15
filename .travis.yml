@@ -11,12 +11,13 @@ python:
 
 before_install:
         - sudo apt-get -qq update
-        - sudo apt-get install -y numactl
+        - sudo apt-get install -y numactl liblapacke-dev
+
 
 install: 
         - pip install --upgrade pip
         - pip install -r requirements.txt
-        - pip install -e .
+        - pip install .
 
 script:
         - python -m pytest
