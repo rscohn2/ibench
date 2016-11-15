@@ -16,6 +16,6 @@ setup(name='ibench',
       license='MIT',
       packages=['ibench'],
       ext_modules=cythonize(extensions),
-      install_requires=['jinja2','numpy','scipy','cython'],
+      install_requires=['jinja2','numpy','scipy'],
       package_data={'ibench': ['docker/Dockerfile.tpl']},
       zip_safe=False)
